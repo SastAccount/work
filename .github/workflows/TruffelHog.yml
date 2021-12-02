@@ -25,3 +25,7 @@ jobs:
       run: |
         echo "Build API"
         sleep 10s
+    - name: trufflehog-actions-scan
+      uses: edplato/trufflehog-actions-scan@master
+      with:
+        scanArguments: "--regex --entropy=True --max_depth=100 --rules /regexes.json" # Add custom options here*
